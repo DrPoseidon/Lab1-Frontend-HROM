@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Наложение фильтров</title>
+</head>
+<body>
+  <div class="header">
+    <img src="./photoshop-icon.svg"/>
+    <input class="header__input" type="file" id="input" onchange="handleFiles(this.files)" accept=".png,.jpeg,.jpg">
+  </div>
+
+  <div class="block">
+    <div class="block__image-div"></div>
+    <img src="./spinner.svg" class="block__loader"/>
+    <a href="" class="download" download>Скачать</a>
+  </div>
+</body>
+</html>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="index.js"></script>
+
