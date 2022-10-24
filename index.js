@@ -1,3 +1,5 @@
+const API = 'http://45.130.151.44:3001/';
+
 async function handleFiles(files) {
   const file = files[0];
   const div = document.querySelector('.block__image-div');
@@ -25,7 +27,7 @@ async function sendFile(img, file) {
   const fd = new FormData();
   fd.append('uploadFile', file);
   let newFile = undefined
-  await fetch('http://45.130.151.203:3000/', {
+  await fetch(API, {
     method: 'POST',
     body: fd
   })
